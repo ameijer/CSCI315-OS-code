@@ -1,0 +1,18 @@
+designAPI.txt
+Alexander Meijer
+Mar 26, 2013
+CSCI 315
+
+
+To select between the three possible allocation policies, the appropriate define statement should be uncommented at the top of the allocator.c file.
+
+The three allcation functions APIs are as follows:
+
+This function call will allocate the memory based on the First-Fit method. the size of memory to be allocated should be specified, as a size_t vlaue passed in size. A pointer to an allocatable slice of memory than can fit the target data should be passed in the void * targetspace pointer. This function will return a pointer to the allocated memory.
+void *allocateFF(size_t size, void *targetspace){}
+
+This function call will allocate the memory based on the Best-Fit method. the size of memory to be allocated should be specified, as a size_t vlaue passed in size. This function will return a pointer to the allocated memory.
+void *allocateBF(size_t size){}
+
+This function call will allocate the memory based on the Worst-Fit method. the size of memory to be allocated should be specified, as a size_t vlaue passed in size. This function will return a pointer to the allocated memory.
+void *allocateWF(size_t size){}

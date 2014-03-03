@@ -1,0 +1,7 @@
+gcc -c -g -Wall file_stat.c
+gcc -g -Wall -o file_stat file_stat.o
+gcc -c -g -Wall read_dir.c
+gcc -o read_dir read_dir.o
+gcc -g -Wall -c hexdump.c -o hexdump.o
+gcc -g -Wall hexdump.o fdump.c -o fdump  hexdump.h
+gcc -g -Wall traverse.c read_dir.h -o traverse
